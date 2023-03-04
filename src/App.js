@@ -1,10 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import Backdrop from "./component/Backdrop";
+import Modal from "./component/Modal";
+import Todo from "./component/Todo";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Millana</h1>
+    <div>
+       <h1>My todos</h1>
+      <Todo text="Learn React"/>
+      <Todo text="Learn Angular"/>
+      <Todo text="Learn Vue"/>
+      <Modal/>
+      <Backdrop/>
     </div>
   );
 }
